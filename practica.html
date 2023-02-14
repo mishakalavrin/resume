@@ -7,30 +7,68 @@
     <meta name="description" content="это база" >
     <meta name="keywords" content="html " >
     <title>Practica</title>
-  
+    <link rel="stylesheet" href="practica.css">
+    <style>
+      .container{
+        max-width: auto;
+         margin-bottom: 20px;
+         padding: 20px;
+        
+      }
+      .photo{
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      .photo2{
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+      }
+
+      .info{
+        margin-bottom: 20px;
+      }
+
+      @media(max-width:750px){
+        .body{
+             font-size: 1.5rem;
+                padding: 10px;
+                text-align: center;
+        }
+
+      }
+    </style>
 </head>
+
 <body>
+    <div class="container">
     <h1>head1</h1>
     <p>   Lorem ipsum<strong><em> dolor, sit amet consectetur</em>></strong> adipisicing elit. Harum id eius minus cum maxime. Fugit, culpa corporis? Corrupti, sed vitae!</p>
     <p> <em>Lorem</em> ipsum dolor sit amet consectetur adipisicing elit. Voluptatum exercitationem optio, nisi quaerat perspiciatis a <br>quae<br> dolorum ipsam incidunt delectus.1</p>
     <h2>head2</h2>
     <h3>моя страница и ссылки </h3>
-    <a href="https://ya.ru/" target="_blank">Яндекс</a><a href="https://mopmr.org/" target="_blank">Мо ПМР</a>
+    <a href="https://ya.ru/" target="_blank" class="btn">Яндекс</a><a href="https://mopmr.org/" target="_blank" class="btn">Мо ПМР</a>
     <h4> картинка</h4>
+    <div class="photo">
     <p> <img src="https://coinmania.com/wp-content/uploads/2022/09/binance1-1.jpg" alt="Binance" width="150"></p>
-    <img src="scale_1200.png" alt="кот" width="150">
+</div>
+<div class="photo2">
+    <img src="scale_1200.png " alt="кот" width="150" >
+</div>
     <hr>
-    <ul><Strong>  МОИ ХОББИ</Strong></ul>
+    <div class="card1">
+    <ul ><Strong>  МОИ ХОББИ</Strong></ul>
     <li>дфдфддф</li>
     <li>12315151</li>
+</div>
     <hr>
     <ol>
         <li>element 1</li>
         <li>element 2</li>
         <li>element 3</li>
     </ol>
+    
     <hr>
-    <h1>Таблица</h1>
+    <div class="card2">
+    <h1 >Таблица</h1>
     <table>
         <thead>
             <tr>
@@ -61,31 +99,36 @@
             </tr>
         </tbody>
     </table>
+</div>
     <hr>
 
 
-    <h1>Связаться со мной</h1>
+    <form action="/" class="form">
+    <h1 >Связаться со мной</h1>
 
+<div class="form-row">
     
-        <div>
+        <div  class="form-group"> 
          <label for="text2">Ваше имя</label>
          <input type="text" id="text2" placeholder="введите имя" >
         </div>
        
        
-        <div>
+        <div class="form-group">
             <label for="Email">Ваш Email</label>
             <input type="Email" id="Email" placeholder="введите ваш Email">
            </div>
-
-           <div>
+        </div>
+           <div class="form-group">
             <label for="text">Ваше сообщение</label>
             <br>
             <textarea  id="message" cols="15" rows="10" placeholder="Введите Email"> </textarea>
             <br>
-            <button type="submit">Отправить форму</button>
-
+            
+            <button class="btn" type="submit">Отправить форму</button>
+        
            </div>
-
+        </div>
+    </form>
 </body>
 </html>
